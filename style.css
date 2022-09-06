@@ -1,6 +1,28 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-color: #212534;
+}
+.box {
+    width: 100%;
+}
+#search {
+    margin: auto;
+    display: block;
+}
+#searchBtn {
+    margin: auto;
+    display: block;
+}
+form {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
 
 .wrapper {
     font-size: 40px;
@@ -8,17 +30,63 @@
     word-spacing: 2px;
     color: #FFFFFF;
     font-weight: 700;
-    text-decoration: underline solid rgb(68, 68, 68);
     font-style: normal;
     font-variant: normal;
     text-transform: capitalize;
     align-self: center;
+    margin: 0 auto;
     margin-top: 5%;
 }
+h1 {
+    text-align: center;
+    align-self: center;
+    color: rgb(255, 127, 80);
+}
 .card {
-    width: 25rem;
-    margin-left: 25%;
+    background: #191c29;
+    padding: 3px;
+    width: 30rem;
+    margin: 0 auto;
     margin-bottom: 25%;
+    align-self: center;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    box-shadow: 0px 0px 20px 10px ;
+    animation: shadows 1.5s infinite;
+}
+@keyframes shadows {
+    0% {
+      text-shadow: #48abe0 0 0 10px;
+      box-shadow: 0px 0px 20px 10px #48abe0;
+    }
+    50% {
+      text-shadow: blueviolet 0 0 10px;
+      box-shadow: 0px 0px 20px 10px blueviolet;
+    }
+    75% {
+      text-shadow: rebeccapurple 0 0 10px;
+      box-shadow: 0px 0px 20px 10px rebeccapuprle;
+    }
+    100% {
+      text-shadow: #48abe0 0 0 10px;
+      box-shadow: 0px 0px 20px 10px #40f771;
+    }
+  }
+.card.img {
+    align-self: center;
+    border-radius: 50%;
+}
+#card-text {
+    color:rgb(255, 255, 255);
 
 }
 .input-group{
@@ -30,4 +98,5 @@
 .container {
     width: 100%;
     position: sticky;
+    background-color: coral;
 }
